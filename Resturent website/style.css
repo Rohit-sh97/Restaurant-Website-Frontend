@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto Mono", monospace , sans-serif;
+
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+/* Navigation Bar */
+
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: white;
+    padding: 10px;
+    z-index:50;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.navigation_container{
+   
+}
+.bar_icon{
+    font-size: 32px;
+}
+
+/* Hero Section */
+
+.hero{
+display: flex;
+gap: 100px;
+justify-content: center;
+align-items: center;
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag{
+    background-color: rgb(6, 134, 6);
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+}
+
+.hero_content h1{
+    font-size: 62px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.explore_butn{
+    background-color: rgb(234, 172, 38);
+    align-self: flex-start;
+}
+
+/* Services css */
+
+.service_container{
+    display: flex;
+    flex-direction: row; 
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    padding: 10PX;
+    margin-bottom: 60PX;
+    margin-top: 40px;
+}
+.imag img{
+    width: 72px;
+}
+.service1{
+    display: flex;
+    gap: 20px;
+}
+
+.service1 h5{
+    font-size: 15px;
+}
+
+.service1 p{
+  font-size: 12px;
+}
+
+
+.green_tag_container{
+    display: flex;
+    flex-direction: column;
+}
+.tagg{
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+}
+
+.tagg h4{
+    font-weight: 300;
+}
+
+.Explore_menu{
+    font-family: roboto;
+    display: flex;
+    padding-top: 10px;
+}
+
+.menu_container{
+    margin: 0 auto;
+}
+
+.Explore_menu{
+   font-size: 20px;
+}
+
+
+
+
+.divider{
+    border: 1px solid rgb(198, 198, 198);
+    margin: 20px 0;
+}
+
+/* GRID */
+
+.grid{ 
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+
+.gride_img{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.gride_img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+
+
+/* |Footer Section|  */
+
+.footer{
+  
+}
+
+.Footer_container{
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
+.Footer_content_box{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    
+}
+
+.main_link_colum3 #button{
+    padding: 4px 8px;
+    border: 2px solid rgb(183, 183, 183);
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.main_link_colum3 #button:hover{
+    background-color: rgb(0, 164, 38);
+    transform: scale(1.08);
+}
+
+
+
+.Footer_content_box h5{
+    font-size: 18px;
+}
+
+@media (max-width: 786px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero_img{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .hero_img img{
+        width: 80%;
+    }
+    .hero_content{
+      gap: 10px;
+      padding: 10px;
+    }
+    .tag h1{
+        font-size: 32px;
+    }
+    .service_container{
+        flex-direction: column;
+    }
+   .grid{
+    padding: 10px;
+   }
+   .gride_img{
+    border-radius: 0px;
+   }
+}
